@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>container</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2> COUNTER</h2>
+        <p class="counter">0</p>
+        <button class="incre"><i class="fa fa-plus"></i></button>
+        <button class="decre"><i class="fa fa-minus"></i></button>
+        
+    </div>
+<script>
+ const counter= document.querySelector('.counter');
+ const incre= document.querySelector('.incre');
+ const decre= document.querySelector('.decre');
+ 
+ let count =0;
+ incre.addEventListener("click",()=>{
+     count=count+1;
+     counter.innerHTML=count;
+
+
+    });
+
+ decre.addEventListener("click",()=>{
+     count=count-1;
+     counter.innerHTML=count;
+
+
+    });
+ 
+
+</script>
+</body>
+</html>
